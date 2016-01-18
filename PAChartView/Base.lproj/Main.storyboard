@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="nZB-e3-A36" customClass="PAChartView">
+                                <rect key="frame" x="140" y="200" width="320" height="200"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="beS-Nv-Ods"/>
+                                    <constraint firstAttribute="width" constant="320" id="k2V-CH-JCR"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nhq-ZM-Agd">
+                                <rect key="frame" x="255" y="462" width="90" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Test Button 1"/>
+                                <connections>
+                                    <action selector="buttonTouched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kl7-uT-QsZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JTU-8y-Guf">
+                                <rect key="frame" x="254" y="525" width="92" height="30"/>
+                                <animations/>
+                                <state key="normal" title="Test Button 2"/>
+                                <connections>
+                                    <action selector="testButton2Touched:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zHQ-ef-Gg0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="JTU-8y-Guf" firstAttribute="top" secondItem="nhq-ZM-Agd" secondAttribute="bottom" constant="33" id="4hC-MT-yOA"/>
+                            <constraint firstItem="nhq-ZM-Agd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BRK-Ct-kcs"/>
+                            <constraint firstItem="nZB-e3-A36" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gnm-Ci-KdE"/>
+                            <constraint firstItem="nhq-ZM-Agd" firstAttribute="top" secondItem="nZB-e3-A36" secondAttribute="bottom" constant="62" id="TrM-wM-v7a"/>
+                            <constraint firstItem="JTU-8y-Guf" firstAttribute="centerX" secondItem="nhq-ZM-Agd" secondAttribute="centerX" id="cNr-P9-dSs"/>
+                            <constraint firstItem="nZB-e3-A36" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vmi-yb-qSQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="chartView" destination="nZB-e3-A36" id="2qX-dg-qFU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
