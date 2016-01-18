@@ -14,12 +14,10 @@
 		13A04BFE1C449C1200810433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13A04BFD1C449C1200810433 /* Assets.xcassets */; };
 		13A04C011C449C1200810433 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13A04BFF1C449C1200810433 /* LaunchScreen.storyboard */; };
 		13A04C0B1C44A84500810433 /* PAChartView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A04C0A1C44A84500810433 /* PAChartView.m */; };
-		13A04C3F1C44FB4000810433 /* GridTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A04C3E1C44FB4000810433 /* GridTest.m */; };
 		13A04C421C44FBC500810433 /* PAChartView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13A04C411C44FBC500810433 /* PAChartView.xib */; };
 		13A04C471C45ED9300810433 /* PAPlotView.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A04C461C45ED9300810433 /* PAPlotView.m */; };
 		13A04C4A1C4638D100810433 /* PAGridLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A04C491C4638D100810433 /* PAGridLayer.m */; };
 		13A04C4D1C47C01D00810433 /* PAPathLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A04C4C1C47C01D00810433 /* PAPathLayer.m */; };
-		13A04C501C4892EE00810433 /* CircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A04C4F1C4892EE00810433 /* CircleLayer.m */; };
 		13A04C531C49027800810433 /* PAPointLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A04C521C49027800810433 /* PAPointLayer.m */; };
 		13A04C561C493F7500810433 /* PAMarkLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A04C551C493F7400810433 /* PAMarkLayer.m */; };
 		13A04C591C49D21D00810433 /* PALabelLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 13A04C581C49D21D00810433 /* PALabelLayer.m */; };
@@ -40,8 +38,6 @@
 		13A04C021C449C1200810433 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		13A04C091C44A84500810433 /* PAChartView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAChartView.h; sourceTree = "<group>"; };
 		13A04C0A1C44A84500810433 /* PAChartView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAChartView.m; sourceTree = "<group>"; };
-		13A04C3D1C44FB4000810433 /* GridTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GridTest.h; sourceTree = "<group>"; };
-		13A04C3E1C44FB4000810433 /* GridTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GridTest.m; sourceTree = "<group>"; };
 		13A04C401C44FB9B00810433 /* PATheme.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PATheme.h; sourceTree = "<group>"; };
 		13A04C411C44FBC500810433 /* PAChartView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PAChartView.xib; sourceTree = "<group>"; };
 		13A04C451C45ED9300810433 /* PAPlotView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAPlotView.h; sourceTree = "<group>"; };
@@ -50,8 +46,6 @@
 		13A04C491C4638D100810433 /* PAGridLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAGridLayer.m; sourceTree = "<group>"; };
 		13A04C4B1C47C01D00810433 /* PAPathLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAPathLayer.h; sourceTree = "<group>"; };
 		13A04C4C1C47C01D00810433 /* PAPathLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAPathLayer.m; sourceTree = "<group>"; };
-		13A04C4E1C4892EE00810433 /* CircleLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircleLayer.h; sourceTree = "<group>"; };
-		13A04C4F1C4892EE00810433 /* CircleLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircleLayer.m; sourceTree = "<group>"; };
 		13A04C511C49027800810433 /* PAPointLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAPointLayer.h; sourceTree = "<group>"; };
 		13A04C521C49027800810433 /* PAPointLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PAPointLayer.m; sourceTree = "<group>"; };
 		13A04C541C493F7400810433 /* PAMarkLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PAMarkLayer.h; sourceTree = "<group>"; };
@@ -97,10 +91,6 @@
 			isa = PBXGroup;
 			children = (
 				13A04C401C44FB9B00810433 /* PATheme.h */,
-				13A04C3D1C44FB4000810433 /* GridTest.h */,
-				13A04C3E1C44FB4000810433 /* GridTest.m */,
-				13A04C4E1C4892EE00810433 /* CircleLayer.h */,
-				13A04C4F1C4892EE00810433 /* CircleLayer.m */,
 				13A04C081C44A80E00810433 /* PAChartView */,
 				13A04BF41C449C1200810433 /* AppDelegate.h */,
 				13A04BF51C449C1200810433 /* AppDelegate.m */,
@@ -285,14 +275,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				13A04C501C4892EE00810433 /* CircleLayer.m in Sources */,
 				13A04BF91C449C1200810433 /* ViewController.m in Sources */,
 				13A04BF61C449C1200810433 /* AppDelegate.m in Sources */,
 				13A04C471C45ED9300810433 /* PAPlotView.m in Sources */,
 				13A04C561C493F7500810433 /* PAMarkLayer.m in Sources */,
 				13A04C4D1C47C01D00810433 /* PAPathLayer.m in Sources */,
 				13A04C0B1C44A84500810433 /* PAChartView.m in Sources */,
-				13A04C3F1C44FB4000810433 /* GridTest.m in Sources */,
 				13A04C531C49027800810433 /* PAPointLayer.m in Sources */,
 				13A04BF31C449C1200810433 /* main.m in Sources */,
 				13A04C4A1C4638D100810433 /* PAGridLayer.m in Sources */,
