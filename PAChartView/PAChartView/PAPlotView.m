@@ -30,11 +30,20 @@
 // MARK: UIView Life Cycle Functions
 - (void)awakeFromNib {
     // 这个比ViewController的ViewDidload更早执行，设置一些默认值
-    self.loadGridLayer = YES;
     self.min = 4.6;
     self.max = 5.6;
     self.datas = @[@4.6, @4.8, @4.7, @5.0, @5.5, @5.3];
     self.type = PAPlotTypePointsAndLabels;
+    switch (self.type) {
+        case PAPlotTypePointsAndLabels:
+        case PAPlotTypeTheLastOneWithGrid:
+            self.loadGridLayer = YES;
+            break;
+            
+        default:
+            self.loadGridLayer = NO;
+            break;
+    }
 }
 // 供xib自动调用，执行流程在ViewController的ViewDidload之后
 // Only override drawRect: if you perform custom drawing.

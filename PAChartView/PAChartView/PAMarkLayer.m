@@ -37,10 +37,14 @@
                 [self addAllPointLayers];
                 [self addAllLabelLayers];
                 break;
-            case PAPlotTypePointsOnly:
+            case PAPlotTypePointsAll:
                 [self addAllPointLayers];
                 break;
+            case PAPlotTypePointsMiddle:
+                [self addMiddlePointLayers];
+                break;
             case PAPlotTypeTheLastOneOnly:
+            case PAPlotTypeTheLastOneWithGrid:
                 [self addLastPointLayers];
                 break;
                 
@@ -54,6 +58,13 @@
 // MARK: Private Functions
 - (void)addAllPointLayers {
     for (NSInteger i = 0; i < self.xValues.count; i++) {
+        CGPoint center = CGPointMake([self.xValues[i] floatValue], [self.yValues[i] floatValue]);
+        [self addPointLayerWithPoint:center];
+    }
+}
+
+- (void)addMiddlePointLayers {
+    for (NSInteger i = 1; i < (self.xValues.count - 1); i++) {
         CGPoint center = CGPointMake([self.xValues[i] floatValue], [self.yValues[i] floatValue]);
         [self addPointLayerWithPoint:center];
     }

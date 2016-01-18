@@ -14,7 +14,7 @@
 #define  kWidth           40.0
 #define  kHeight          20.0
 #define  kOffset          10.0
-#define  kCornerRadius    5.0
+#define  kCornerRadius    (kHeight / 2)
 #define  kFillColor       0xff8888
 // text
 #define  kFontSize        16

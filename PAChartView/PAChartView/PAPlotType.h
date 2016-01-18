@@ -11,8 +11,10 @@
 
 typedef NS_ENUM (NSUInteger, PAPlotType) {
     PAPlotTypePointsAndLabels= 1,
-    PAPlotTypePointsOnly,
-    PAPlotTypeTheLastOneOnly
+    PAPlotTypePointsAll,
+    PAPlotTypePointsMiddle,
+    PAPlotTypeTheLastOneOnly,
+    PAPlotTypeTheLastOneWithGrid
 };
 
 
